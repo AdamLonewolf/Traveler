@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+/*Eimination des marges parasites*/
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*première barre (annonces)*/
+header
+{
+    height: 50px;
+    background-color: #212121;
+    align-items: center;
+    text-align: center;
+    padding: 14px 0 0 30px;
+    
+}
+
+.announcement,.annonce
+{
+    display: inline-block;
+    font-family:'Open Sans', sans-serif;
+    font-weight: 550;
+    color: white;
+    position: relative;
+        bottom: 4px;
+}
+
+.weight
+{
+    font-weight: 700;
+}
+
+.announcement{
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    background-color: #ec5759;
+    color: white;
+    padding: 6px 17px;
+    transition: 1s ease;
+    font-family:'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+.announcement:hover{
+    background-color: #be4244;
+    color: white;
+}
+
+/*Barre de navigation*/
+
+.navbar /*je paramètre la barre de navigation ainsi que son contenu*/
+{
+    height: 60px;
+    background-color: #ec5759;
+    display: flex;
+    padding: 30px 45px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar li, a /*je modifie la typographie*/
+{
+    text-decoration: none;
+    font-family:'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 450;
+    color: white;
+    
+}
+
+
+.navbar li /*Je fais en sorte que les éléments de la liste soient alignés et espacés entre eux*/
+{
+    display: inline-block;
+    padding: 0px 18px;
+    position: relative;
+    right: 40%;
+}
+
+.logo /*je gère les dimensions du logo (il était trop grand ahah)*/
+{
+  width:200px;
+  height:auto;
+  padding-left: 50px;
+  position: relative;
+  left: 53%;
+}
+
+.divcart
+{
+   position:relative;
+   left:49% ;
+   top:20%;
+   width: 25px;
+   height: auto;
+   border-radius: 4px;
+   background-color: #212121;
+   padding: 5px 28px;
+   justify-content: center;
+   display: flex;
+   cursor: pointer;
+   transition: 1s ease;
+}
+
+.divcart:hover
+{
+    background-color: #4e4c4c;
+}
+
+.divnotif
+{
+    color: black;
+    position: absolute;
+    left: 87%;
+    bottom: 75%;
+    border: none;
+    background-color: white;
+    border-radius: 40px;
+    padding: 2px 6px;
+    font-size: 11px;
+    
+}
+
+
+
+/*La première bannière  ainsi que son contenu*/
+
+.bannerdebut
+{
+    height: 500px;
+    background-image: url("../../Prototype/images/banner1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: scroll;
+}
+
+.text
+{
+    padding-top: 11%;
+    padding-left:15%;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+.text h2
+{
+    font-size:40px ;
+    font-weight: 750;
+    letter-spacing: 0.5px;
+}
+.text p
+{
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.clickfirst
+{
+    position: relative;
+    left: 0.2%;
+    top: 15px;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 6px 17px;
+    transition: 1s ease;
+    font-family:'Open Sans', sans-serif;
+    font-weight: 700;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    text-decoration: white;
+    transition: 1s ease;
+}
+
+.clickfirst:hover
+{
+    background-color: white;
+    color: black;
+}
+/*La partie principale*/
+
+.mainpart
+{
+    height: 700px;
+    background-color: white;
+    overflow: hidden;
+}
+
+/*Le titre de la partie principale et le contexte*/
+
+.titre
+{
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    left: 15%;
+    top:10%
+}
+
+.titre h2
+{
+    font-size: 15px;
+    font-weight: 650;
+}
+
+.titre h3{
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.contexte
+{
+    position: relative;
+    left: 47%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    position: relative;
+    
+}
+
+
+/*Les Carrés et leur contenu*/
+
+.carre1, .carre2, .carre3
+{
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    background-color: #212121;
+    justify-content: center;
+    position: relative;
+    left: 15%;
+    margin-top: 4%;
+    margin-right: 35px;
+    border-radius: 5px;
+}
+
+.carre2
+{
+    
+  position: relative;
+  bottom: 47px;
+
+}
+
+.carre3
+{
+    position: relative;
+    bottom: 13px;
+}
+
+.cercle
+{
+   display: flex;
+   position: relative;
+   left: 85%;
+   top: 40%;
+}
+.triangle
+{
+   display: flex;
+   position: relative;
+   left: 78%;
+   top: 50%;
+}
+.square
+{
+   display: flex;
+   position: relative;
+   left: 85%;
+   top: 39%;
+}
+/*Positionnement des textes ainsi que des éléments*/
+
+.number
+{
+    font-family: 'Open Sans', sans-serif;
+     padding-left: 20px;
+     padding-top: 20px;
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+
+}
+
+.word1
+{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    text-align: center;
+    position: relative;
+    top:19%;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.word2
+{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    text-align: center;
+    position: relative;
+    top:25%;
+    font-size: 30px;
+    font-weight: 700;
+}
+.word3
+{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    text-align: center;
+    position: relative;
+    top:19%;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+/*Les blocs de texte*/
+
+.txt1, .txt2, .txt3
+{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700 ;
+    font-size: 13.5px;
+}
+
+.txt1
+{
+    position: relative;
+    left: 15%;
+    bottom: 0.9%;
+
+}
+
+.txt2
+{
+    position: relative;
+    left: 40%;
+    bottom: 12%;
+}
+
+.txt3
+{
+    position: relative;
+    left: 65%;
+    bottom: 23%;
+}
+
+/*La seconde bannière*/
+
+.bannerend
+{
+    height: 500px;
+    background-image: url("../../Prototype/images/banner2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: scroll;
+}
+ /*je refais le même procédé que la première bannière, mais je change certains paramètres*/
+.text2
+{
+    padding-top: 13%;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    position: relative;
+    right: 12%;
+
+}
+
+.text2 h2
+{
+    font-size:40px ;
+    font-weight: 650;
+    letter-spacing: 0.5px;
+    text-align: right;
+}
+.text2 p
+{
+    font-weight: 500;
+    font-size: 16px;
+    text-align: right;
+}
+
+.clicklast
+{
+    position: relative;
+    left: 87%;
+    top: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    padding: 6px 17px;
+    transition: 1s ease;
+    font-family:'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+.clicklast:hover
+{
+    background-color: black;
+    color: white;
+}
+
+/*Bon là maintenant j'attaque le pied de a page*/
+
+footer
+{
+    height: 100px;
+    background-color: white;
+}
+
+/*Ici je donne un paramétrage aux différents titres.*/
+
+footer h2
+{
+    font-family: 'Open sans', sans-serif;
+    font-size: 11px;
+    font-weight:700 ;
+    position: relative;
+    left: 5px;
+}
+footer h3
+{
+    font-family: 'Open sans', sans-serif;
+    font-size: 30px;
+    font-weight:700;
+}
+
+.align
+{
+    text-align: left;
+    padding-left: 10%;
+    padding-top: 3%;
+    width: 1000px;
+}
+
+
